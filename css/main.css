@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #0c0c0c;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+.navbar .navbar_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar_ul .dr_down_li {
+  padding: 17px 25px;
+  cursor: pointer;
+  position: relative;
+}
+.navbar .navbar_ul .dr_down_li:hover {
+  background-color: #383838;
+}
+.navbar .navbar_ul .dr_down_li:hover .dr_down {
+  display: block;
+}
+.navbar .navbar_ul .dr_down {
+  display: none;
+  position: absolute;
+  background-color: #303030;
+  top: 50px;
+  left: 0;
+  z-index: 99;
+}
+.navbar .navbar_ul .dr_down li {
+  display: block;
+}
+.navbar .navbar_ul .dr_down li a {
+  padding: 12px 25px;
+  display: block;
+}
+.navbar .navbar_ul .dr_down li a:hover {
+  background-color: #646464;
+}
+.navbar .navbar_ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.navbar .navbar_ul li a {
+  padding: 17px 25px;
+  display: inline-block;
+}
+.navbar .navbar_ul li a:hover {
+  background-color: #383838;
+}
+.navbar .navbar_ul li .active {
+  background-color: #646464 !important;
+}
+
+.show_case {
+  margin-bottom: -3px;
+}
+.show_case .overlay {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%);
+  z-index: 3;
+}
+.show_case video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.show_case .container {
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 9;
+}
+.show_case .container h1 {
+  font-size: 90px;
+  margin-bottom: 50px;
+}
+.show_case .container h1 span {
+  display: block;
+  font-size: 40px;
+  font-weight: 400;
+}
+.show_case .container a {
+  display: inline-block;
+  padding: 10px 80px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.courses {
+  display: flex;
+}
+.courses div {
+  height: 516px;
+  width: 20%;
+  transition: all 0.6s ease 0s;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.courses div:hover {
+  width: 25%;
+}
+.courses div:hover div {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%);
+}
+.courses div:hover p {
+  opacity: 1;
+}
+.courses div div {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.6) 50%);
+}
+.courses div h3 {
+  transform: translateY(130px);
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.courses div p {
+  transform: translateY(180px);
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.courses .web {
+  background-image: url(../images/header-wp.webp);
+}
+.courses .smm {
+  background-image: url(../images/header-smm.webp);
+}
+.courses .design {
+  background-image: url(../images/header-wd.webp);
+}
+.courses .dmax {
+  background-image: url(../images/3ds.webp);
+}
+.courses .other {
+  background-image: url(../images/scratchch.jpg);
+}
+
+.koworking .box {
+  background-image: url(../images/1.webp);
+}
+.koworking .box .grad {
+  padding: 200px 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.4993347681) 100%);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.koworking .box h3 {
+  font-size: 35px;
+}
+.koworking .box p {
+  font-size: 24px;
+  padding: 30px 0;
+  font-weight: 300;
+  padding-right: 400px;
+}
+.koworking .box a {
+  font-size: 18px;
+  padding: 12px 150px;
+  border: 2px solid #fff;
+  display: inline-block;
+}
+
+.cards {
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.cards .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 140px;
+  color: #303030;
+  row-gap: 70px;
+}
+.cards .container h2 {
+  font-size: 55px;
+  margin-bottom: 10px;
+  grid-column: 1/3;
+  text-align: center;
+}
+.cards .container .card img {
+  margin-bottom: 30px;
+}
+.cards .container .card h3 {
+  font-size: 29px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.cards .container .card p {
+  font-size: 21px;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+footer .top {
+  background-color: #151515;
+  padding: 50px 0;
+}
+footer .top .container {
+  display: flex;
+  justify-content: space-around;
+}
+footer .top .container .kurses {
+  display: flex;
+  justify-content: space-around;
+}
+footer .top .container .kurses div {
+  padding-right: 50px;
+  width: 300px;
+}
+footer .top .container .kurses div h5 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+footer .top .container .kurses div ul li {
+  font-size: 14px;
+  padding-bottom: 8px;
+  color: #a0a0a0;
+}
+footer .top .container .addres h5 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+footer .top .container .addres a {
+  font-size: 14px;
+  padding-bottom: 8px;
+  color: #a0a0a0;
+  display: inline-block;
+}
+footer .top .container .addres p {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+footer .top .container .addres p i {
+  font-size: 18px;
+  padding-right: 5px;
+}
+footer .buttom {
+  background-color: #0c0c0c;
+  padding: 12px 0;
+}
+footer .buttom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .buttom .container ul {
+  display: flex;
+}
+footer .buttom .container ul li {
+  font-size: 22px;
+  margin-left: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */
